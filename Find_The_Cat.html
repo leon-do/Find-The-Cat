@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+	// PROBLEM: Find ALL of the cats. 
+
+		var myArray = ["cat", "dog", "mouse", "cat", "cat", "dog", "zebra", "dog", "cat", "fish", "cat"];
+		// Feel free to add more animals aka values.
+
+		myArray.indexOf("cat"); // only returns one number
+
+		// Answer should be more than one number beacause there are multiple cats.
+
+
+
+
+
+
+	//SOLUTION
+		var catHouse = []; //store cats here
+
+		//scan for "cat"
+		for (var i = 0; i < myArray.length; i++){
+			if (myArray[i] === "cat"){
+				catHouse.push(i); // puts cat in the catHouse
+			}
+		}
+
+		//display on page
+		document.write(
+			"Find <strong> all </strong> of the cats" + "<br> <br>" +
+			"myArray: " + myArray + "<br> <br>" +
+			"myArray.indexOf('cat'): " + myArray.indexOf("cat") + "<br> <br>" +
+			"answer <strong> should </strong> be " + catHouse + "<br> <br>" +
+			"myArray.length : " + myArray.length + "<br> <br>" +
+			"some insignificant stuff here..." + "<br> <br>" +
+			"catHouse: " + catHouse)
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
